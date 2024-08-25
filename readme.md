@@ -43,26 +43,26 @@ If you prefer to build the image from source:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-repo/github-gitea-mirror.git
-   cd github-gitea-mirror
+   git clone https://github.com/your-repo/GitSync.git
+   cd GitSync
    ```
 
 2. Build the Docker image:
 
    ```
-   docker build -t github-gitea-mirror .
+   docker build -t GitSync .
    ```
 
 3. Run the container using the locally built image:
 
    ```
-   docker run -d --name github-gitea-mirror \
+   docker run -d --name GitSync \
      -e GITHUB_USERNAME=your-github-username \
      -e GITHUB_TOKEN=your-github-token \
      -e GITEA_URL=http://your-gitea-domain/api/v1 \
      -e GITEA_TOKEN=your-gitea-token \
      -e GITEA_UID=1 \
-     github-gitea-mirror
+     GitSync
    ```
 
 ## Environment Variables
